@@ -51,7 +51,8 @@ def do_configure(args):
     if args.shared_libs:
         llvm_build_shared_libs = 'ON'
 
-    install_dir = os.path.join(abs_obj_dir, "install")
+    #install_dir = os.path.join(abs_obj_dir, "install")
+    install_dir = os.environ['INTEL_ROOT']
 
     cmake_cmd = [
         "cmake",
