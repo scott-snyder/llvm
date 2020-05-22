@@ -1,0 +1,23 @@
+Bottom: 9a1c110d900d784705fa03695d4ef76b8ec95f60
+Top:    5f3416087af062388709d700eb85cce4373a0a50
+Author: scott snyder <sss@karma>
+Date:   2020-05-22 00:17:22 -0400
+
+Refresh of config
+
+---
+
+diff --git a/buildbot/configure.py b/buildbot/configure.py
+index dbfcf989f4d..e0d35eca16b 100644
+--- a/buildbot/configure.py
++++ b/buildbot/configure.py
+@@ -51,7 +51,8 @@ def do_configure(args):
+     if args.shared_libs:
+         llvm_build_shared_libs = 'ON'
+ 
+-    install_dir = os.path.join(abs_obj_dir, "install")
++    #install_dir = os.path.join(abs_obj_dir, "install")
++    install_dir = os.environ['INTEL_ROOT']
+ 
+     cmake_cmd = [
+         "cmake",
