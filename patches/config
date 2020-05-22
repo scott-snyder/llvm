@@ -1,0 +1,11 @@
+Bottom: 9a1c110d900d784705fa03695d4ef76b8ec95f60
+Top:    9a1c110d900d784705fa03695d4ef76b8ec95f60
+Author: scott snyder <sss@karma>
+Date:   2020-05-22 00:17:13 -0400
+
+Allow separating install directory from build directory.
+
+
+---
+
+
